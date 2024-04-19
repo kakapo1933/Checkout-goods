@@ -1,8 +1,7 @@
-import database from '../database.json';
 import Product from '../classes/Product';
 import ProductsInTheBag from '../classes/ProductsInTheBag';
 
-export default function checkout (productIDs = []) {
+export default function checkout (productIDs = [], database = {}) {
   // Check if productIDs is an array
   if (!Array.isArray(productIDs)) {
     throw new Error('Product IDs must be an array');
