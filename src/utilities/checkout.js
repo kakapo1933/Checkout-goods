@@ -1,6 +1,6 @@
 import database from '../database.json';
-import Product from './Product';
-import ProductsInTheBag from './ProductsInTheBag';
+import Product from '../classes/Product';
+import ProductsInTheBag from '../classes/ProductsInTheBag';
 
 export default function checkout (productIDs = []) {
   // Check if productIDs is an array
